@@ -1,0 +1,5 @@
+<% @tasks.each do |task| %>
+    <%= check_box_tag task.id, 'completed', task.complete %>
+    <span id=<%= task.id %>><%= task.name + ': ' + task.desc.to_s %></span><br>
+<% end %>
+
